@@ -1,0 +1,51 @@
+<form [formGroup]="mpfForm" (ngSubmit)="saveForm()">
+  <button type="submit" class="btn btn-primary" >Submit</button>
+  <div class="container-fluid">
+
+    <div class="panel-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1>Estimated Rent Rebates Granted to Tenants of Non-HRA Properties</h1>
+        </div>
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-8">
+              <h3>EXPEDITURE FOR THE FINANCIAL YEAR</h3>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="C008_ReReExp">
+            </div>
+            <div class="col-sm-1" style="background-color:lavenderblush;">008</div>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-8">
+              <h3>Expenditure up to the lower of the one bedroom self-containted LHA rate and the upper limit (£500 or £375).</h3>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="C009_ReReExpUpToLwThrshBLA">
+            </div>
+            <div class="col-sm-1" style="background-color:lavenderblush;">009</div>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-8">
+              <h3>Expenditure <b>above</b> the lower of the one bedroom self-contained LHA rate and the upper limit (£500 or £375).</h3>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" formControlName="C010_ReReExpOverHghThrshBLA">
+            </div>
+            <div class="col-sm-1" style="background-color:lavenderblush;">010</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</form>

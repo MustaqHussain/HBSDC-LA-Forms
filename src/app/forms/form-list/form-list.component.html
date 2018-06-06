@@ -1,0 +1,28 @@
+
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <select #FinancialYear class="form-control full autocompleter">
+                <option *ngFor="let item of financialYears">{{item}}</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <select #FormType class="form-control full autocompleter">
+                <option *ngFor="let item of formTypes">{{item}}</option>
+              </select>
+            </div>
+            <div class="col-sm-5">
+                <select #LocalAuthority class="form-control full autocompleter">
+                    <option *ngFor="let item of LAs" value={{item.AuthorityNumber}}>{{item.AuthorityName}}</option>
+                  </select>
+            </div>
+
+            <div class="col-sm-1">
+                <button (click)="loadForm(FinancialYear.value, FormType.value, LocalAuthority.value )" class="btn btn-primary" >Load form</button>
+            </div>
+
+          </div>
+        </div>
+
+
